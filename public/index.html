@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>iDiscuss - connects people</title>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="logo.jpg" alt="logo" />
+      <h2 class="appname">iDiscuss</h2>
+    </nav>
+    <div id="greeting"></div>
+    <div class="container">
+      <!-- <div class="message right">Shubham: Hey how are you?</div>
+      <div class="message left">John: I am good Shubham. What about you?</div> -->
+    </div>
+    <div class="send">
+      <form id="send-container" autocomplete="off">
+        <input type="text" id="message-input" placeholder="Enter message..." />
+        <button class="btn btn-primary" type="submit" id="send-button">
+          <i class="fa fa-paper-plane"></i>
+          Send
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
